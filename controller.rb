@@ -9,3 +9,19 @@ get '/:hand1/:hand2' do
   @game = game.play
   erb(:result)
 end
+
+get '/' do
+  erb(:welcome)
+end
+
+get '/Paper' do
+  erb(:paper)
+end
+
+get '/Rock' do
+  erb(:rock)
+end
+
+get '/Scissors' do
+  erb(:scissors)
+end
