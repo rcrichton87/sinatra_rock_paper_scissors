@@ -9,17 +9,17 @@ class Game
     if @hand1 == @hand2
       @result = "Draw"
     elsif (@hand1 == "Rock") && (@hand2 == "Scissors")
-      @result = "#{@hand1} wins"
+      @result = "Player 1 wins, playing #{@hand1}!"
     elsif (@hand1 == "Rock") && (@hand2 == "Paper")
-      @result = "#{@hand2} wins"
+      @result = "Player 2 wins, playing #{@hand2}!"
     elsif (@hand1 == "Paper") && (@hand2 == "Rock")
-      @result = "#{@hand1} wins"
+      @result = "Player 1 wins, playing #{@hand1}!"
     elsif (@hand1 == "Paper") && (@hand2 == "Scissors")
-      @result = "#{@hand2} wins"
+      @result = "Player 2 wins, playing #{@hand2}!"
     elsif (@hand1 == "Scissors") && (@hand2 == "Rock")
-      @result = "#{@hand2} wins"
+      @result = "Player 2 wins, playing #{@hand2}!"
     elsif (@hand1 == "Scissors") && (@hand2 == "Paper")
-      @result = "#{@hand1} wins"
+      @result = "Player 1 wins, playing #{@hand1}!" 
     end
     return @result
   end
